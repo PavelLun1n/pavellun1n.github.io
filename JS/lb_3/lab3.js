@@ -1,7 +1,7 @@
 "use strict";
 
 // возвращает n-е число Фибоначчи
-import {fib}  from '../lab2/fib.js';
+import {fib}  from '../lb_2/fib.js';
 
 //возвращает дробную часть числа num
 export function getDecimal(num) {
