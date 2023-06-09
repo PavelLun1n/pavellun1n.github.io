@@ -57,17 +57,10 @@ function onKeydown(event, num) {
     }
 }
 function hundred() {
-    console.clear()
     let num;
     do {
-        num = prompt('Введите число большее 100');
-        if (num === null) return; // выход из функции, если нажали "Отмена"
-        if (num === '') continue; // продолжаем цикл, если введена пустая строка
-    } while (num <= 100);
-    alert(num);
-    document.addEventListener('keydown', function(event) {
-        onKeydown(event, num);
-    });
+      num = prompt("Введите число больше 100:");
+    } while (num !== null && (isNaN(num) || +num <= 100));
 }
 
 function simple() {
@@ -90,9 +83,11 @@ function catdog() {
      const s1 = "dog dog dog cat cat dog";
      const s2 = "dog dog cat cat dog dog";
      const s3 = "dog cat cat dog dog dog";
-     var str = [s1, s2, s3];
+     const s4 = "cat cat dog dog dog cat";
+     const s5 = "cat dog dog dog cat cat";
+     var str = [s1, s2, s3,s4,s5];
      for (let i = 0; i < n; i++) {
-         console.log(str[i%3]);
+         console.log(str[i%5]);
          }
  
    
