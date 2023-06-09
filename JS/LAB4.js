@@ -2,12 +2,12 @@
 function books(){
     console.clear()
     let book1 = {};
-    book1.title = "The Bazaar of Bad Dreams";
+    book1.title = "JS SCRIPT";
     book1.pubYear = 2016;
     book1.price = 15.99;
     
     let book2 = {
-      title: "Pet Sematary",
+      title: "HTML SCRIPT",
       pubYear: 1983,
       price: 20.99
     };
